@@ -9,16 +9,19 @@
 
 <body>
     <div class="container">
-        <div class="row mt-5">
-            <div class="col-md-12">
+        <div class="row mt-5 justify-content-center">
+            <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">
                         <h5>create memo</h5>
                     </div>
-                
-                <div class="card-body">
-                    @yield('content')
+
+                    <div class="card-body">
+                        @yield('content')
+                    </div>
                 </div>
+                <div class=" mt-5  table-responsive">
+                    @yield('show_memos')
                 </div>
             </div>
         </div>

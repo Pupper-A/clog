@@ -15,6 +15,7 @@
 @endsection
 
 @section ('show_memos')
+@if(count($memos) > 0)
 <table class="table table-striped table-bordered table-hover">
     <thead>
         <tr>
@@ -38,6 +39,8 @@
     </tbody>
 
 </table>
+@endif
+
 @endsection
 </body>
 

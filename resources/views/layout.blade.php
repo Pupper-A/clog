@@ -13,7 +13,7 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">
-                        <h5>create memo</h5>
+                        <h5>Create Memo</h5>
                     </div>
 
                     <div class="card-body">

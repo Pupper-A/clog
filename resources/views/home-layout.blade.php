@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
 <body>
-<div class="ui  vertical masthead center aligned segment" style="min-height :500px; background-color:darkkhaki;";>
+<div class="ui  vertical masthead center aligned segment" style="min-height :500px; background-color:white;";>
     <div class="container">
         <div class="ui attached stackable menu">
             <div class="ui container">
-                <a class="item">
+                <a class="item" href="{{route('home')}}">
                     <i class="home icon"></i> Home
                 </a>
                 <a class="item" href="{{route('memo.index')}}">

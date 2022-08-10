@@ -46,6 +46,4 @@
     @endif
 
 @endsection
-</body>
 
-</html>

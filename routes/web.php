@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/','home');
+Route::view('/','home')->name('home');
 Route::get('/memos',[MemoController::class,'index'])->name('memo.index');
 Route::post('/memos',[MemoController::class,'store'])->name('memo.store');

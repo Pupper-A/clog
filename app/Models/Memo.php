@@ -9,8 +9,4 @@ class Memo extends Model
 {
     use HasFactory;
     protected $fillable=['content'];
-
 }
-
-;
- 

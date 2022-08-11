@@ -36,7 +36,7 @@
                                             @if ($memo->created_at > carbon::now()->format('Y-m-d 00:00:00'))
                                                 {{ $memo->created_at->diffForHumans() }}
                                             @else
-                                                {{ $memo->created_at }}
+                                                {{ $memo->created_at->format('Y-m-d')}}
                                             @endif
                                         </td>
                                     </tr>

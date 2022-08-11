@@ -2,10 +2,10 @@
 
 <head>
     <meta charset="utf-8">
-    <script src="/dist/semantic.min.js"></script>
+    <script src="/build/js/app.js"></script>
     <link rel="stylesheet" href="main.css">
 
-    <link rel="stylesheet" href="/dist/semantic.min.css">
+    <link rel="stylesheet" href="/build/css/app.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
 

@@ -11,9 +11,7 @@ class MemoController extends Controller
     public function index()
     {
         $memos=Memo::orderBy('created_at', 'desc')->get(); 
-        
         return view('memo')->with('memos',$memos); 
-         
     }
 
     public function store(Request $request)

@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <script src="/build/js/app.js"></script>
     <link rel="stylesheet" href="main.css">
-
     <link rel="stylesheet" href="/build/css/app.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
@@ -21,8 +20,8 @@
                     <a class="item" href="{{ route('memo.index') }}">
                         <i class="grid layout icon"></i> Memos
                     </a>
-                    <a class="item">
-                        <i class="mail icon"></i> Messages
+                    <a class="item" href="{{ route('feedback.index') }}">
+                        <i class="mail icon"></i> Feedbacks
                     </a>
                     <div class="ui simple dropdown item">
                         More

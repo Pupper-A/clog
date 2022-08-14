@@ -15,7 +15,7 @@
                                 <label for="memo">Share Memory</label>
                                 <textarea id="memo" class="form-control" name="memo" rows="4" cols="180"></textarea>
                             </div>
-                            <input type="submit" class="btn btn-success mt-6" name="submit" value="Send" />
+                            <input type="submit" class="btn btn-success mt-6 form-control" name="submit" value="Send" />
                         </form>
                     </div>
                 </div>

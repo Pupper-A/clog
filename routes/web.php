@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\MemoController;
+use App\Http\Controllers\FeedbackController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,5 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/','home')->name('home');
+
 Route::get('/memos',[MemoController::class,'index'])->name('memo.index');
 Route::post('/memos',[MemoController::class,'store'])->name('memo.store');
+
+Route::get('/feedbacks',[FeedbackController::class,'index'])->name('feedback.index');
+Route::post('/feedbacks',[FeedbackController::class,'store'])->name('feedback.store');

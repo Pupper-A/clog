@@ -5,16 +5,18 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">
-                        <h5>Feedbacks</h5>
+                        <h6 class="header-text">Feedbacks</h6>
                     </div>
                     <div class="card-body">
                         <form action="{{ route('feedback.store') }}" method="post">
                             @csrf
                             <div class="form-group">
-                                <label for="feedback">Send Your Feedbacks</label>
+                                <label class="lable" for="feedback">Send Your Feedbacks</label>
                                 <textarea id="feedback" name="message" class="form-control" rows="4" cols="180"></textarea>
                             </div>
-                            <input type="submit" class="form-control btn btn-success mt-6" name="submit" value="Share" />
+                            <div class="row justify-content-center">
+                                <input type="submit" class=" all-btn" name="submit" value="Share" />
+                            </div>
                         </form>
                     </div>
                 </div>

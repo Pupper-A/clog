@@ -6,16 +6,18 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h5>Create Memo</h5>
+                        <h6 class="header-text">Create Memo</h6>
                     </div>
                     <div class="card-body">
                         <form action="{{ route('memo.store') }}" method="post">
                             @csrf
-                            <div class="form-group">
-                                <label for="memo">Share Memory</label>
+                            <div class="form-group col-12">
+                                <label class="lable" for="memo">Share Memory</label>
                                 <textarea id="memo" class="form-control" name="memo" rows="4" cols="180"></textarea>
                             </div>
-                            <input type="submit" class="btn btn-success mt-6 form-control" name="submit" value="Send" />
+                            <div class="row justify-content-center">
+                                <input type="submit" class="all-btn" name="submit" value="Send" />
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -24,8 +26,8 @@
                         <table class="table table-striped table-bordered table-hover">
                             <thead>
                                 <tr>
-                                    <th>memo</th>
-                                    <th>created time</th>
+                                    <th>Memo</th>
+                                    <th>Created Time</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -36,7 +38,7 @@
                                             @if ($memo->created_at > carbon::now()->format('Y-m-d 00:00:00'))
                                                 {{ $memo->created_at->diffForHumans() }}
                                             @else
-                                                {{ $memo->created_at->format('Y-m-d')}}
+                                                {{ $memo->created_at->format('Y-m-d') }}
                                             @endif
                                         </td>
                                     </tr>
